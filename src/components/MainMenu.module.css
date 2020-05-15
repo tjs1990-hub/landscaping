@@ -1,0 +1,64 @@
+
+.BodyClass{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+.Nav {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  text-align: center;
+  height: 40px;
+}
+
+
+
+.MainBut:focus{
+
+  outline: none;
+
+}
+.ButOne{
+  visibility: hidden;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+
+}
+
+.MainBut{
+  visibility: visible;
+  transition-property: all;
+  transition-delay: 2s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.ButOne:focus{
+  outline: none;
+}
+
+
+.Nav {
+  z-index: 2;
+  background-color: green !important;
+  text-align: center;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .NavBar{
+      flex-direction: column !important;
+    }
+
+}

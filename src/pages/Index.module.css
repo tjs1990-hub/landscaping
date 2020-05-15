@@ -1,0 +1,12 @@
+.Wrapper {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.GetQuote {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: green;
+}

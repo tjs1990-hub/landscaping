@@ -1,0 +1,139 @@
+.Con{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  
+}
+.Image{
+    max-height: 200px;
+    min-height: 200px;
+}
+.Row{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.Card{
+    -webkit-box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
+-moz-box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
+box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
+transform: scale(0.8);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 1000ms;
+  margin-bottom: 30px;
+  width: 100%;
+
+}
+
+.Card:hover {
+    -webkit-box-shadow: -1px -1px 29px 2px rgba(255,255,255,1);
+  -moz-box-shadow: -1px -1px 29px 2px rgba(255,255,255,1);
+  box-shadow: -1px -1px 29px 2px rgba(255,255,255,1);
+     transform: scale(1.1);
+     transition-duration: 1000ms;
+     transition-property: all;
+     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: rgb(0, 128, 0);
+    color: #fff;
+  }
+
+  .B{
+      text-align: center;
+  }
+
+  .GetQuote {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: green;
+}
+
+.Header{
+    height: 60vh;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.headerImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.Overlay{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Overlay h1{
+    color: white;
+    font-display: swap;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.GM{
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.Content{
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.Inner{
+    width: 50%;
+    font-size: 20px;
+}
+
+.FAQ{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.InnerFAQ{
+  width: 50%;
+    font-size: 20px;
+}
+
+@media(max-width: 980px) {
+    .Inner{
+        width: 90%;
+
+    } 
+}

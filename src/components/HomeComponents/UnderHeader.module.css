@@ -1,0 +1,139 @@
+.Con {
+  color: white;
+}
+
+.Col {
+  border: 2px solid white;
+  margin-bottom: 50px;
+}
+
+.Row {
+  color: #fff;
+}
+
+.CovidSection {
+  height: auto;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.CovidSection h3{
+  color: red;
+}
+
+.Welcome {
+  border: 2px solid white;
+}
+.Welcome h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.Welcome h2:hover {
+  color: rgb(0, 128, 0);
+}
+
+.List {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.List h5 {
+  font-weight: bold;
+}
+
+.Icon {
+  font-size: 50px;
+  margin-left: 80px;
+  color: green;
+}
+
+.VidCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.VidCol iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.VidCol h2 {
+  font-weight: bold;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .Welcome {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .Col {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .Con h2 {
+    font-size: 20px;
+  }
+  .Con p {
+    font-size: 16px;
+  }
+
+  .Icon {
+    font-size: 30px;
+    margin-left: 60px;
+    color: green;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .Welcome {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .Icon {
+    font-size: 35px;
+    margin-left: 65px;
+    color: green;
+  }
+
+  .List p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .List p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .Icon {
+    font-size: 45px;
+    margin-left: 65px;
+    color: green;
+  }
+
+  .List p {
+    font-size: 20px;
+  }
+}

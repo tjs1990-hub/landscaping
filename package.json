@@ -1,0 +1,62 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "gatsby": "^2.18.12",
+    "gatsby-cli": "^2.8.27",
+    "gatsby-image": "^2.2.42",
+    "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-google-analytics": "^2.1.33",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-tagmanager": "^2.1.25",
+    "gatsby-plugin-guess-js": "^1.2.4",
+    "gatsby-plugin-manifest": "^2.2.31",
+    "gatsby-plugin-offline": "^3.0.27",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-plugin-sitemap": "^2.2.25",
+    "gatsby-plugin-transition-link": "^1.18.0",
+    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-source-google-places": "^0.0.6",
+    "gatsby-source-instagram": "^0.6.1",
+    "gatsby-source-wordpress": "^3.1.54",
+    "gatsby-transformer-sharp": "^2.3.7",
+    "gsap": "^3.2.6",
+    "mdbreact": "^4.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-burgers": "^1.3.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-ratings-declarative": "^3.4.1",
+    "react-render-html": "^0.6.0",
+    "react-structured-data": "^0.0.14"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

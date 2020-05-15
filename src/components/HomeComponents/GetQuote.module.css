@@ -1,0 +1,135 @@
+.BtnCon button:hover {
+  background-color: white !important;
+  color: green !important ;
+}
+.BodyClass{
+  width: 100vw !important;
+  margin: 0;
+  padding: 0;
+  
+}
+.BtnCon button {
+  background-color: black !important;
+  color: white !important;
+  font-size: 16px;
+}
+
+.BtnCon {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 0;
+  transition: height;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.BtnconActive{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 0;
+  transition: height;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  overflow: hidden;
+  
+}
+
+.BtnCon h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.BtnCon h2:hover {
+  color: black;
+}
+
+.Modal {
+  z-index: 3000 !important;
+  position: relative;
+  
+  
+}
+
+.ModalHead {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.FormBtn {
+  border: 2px solid green !important;
+  background-color: transparent !important;
+  color: green !important;
+}
+
+.FormBtn:hover {
+  border: 2px solid green !important;
+  background-color: black !important;
+  color: white !important;
+}
+
+.ModalHead {
+  font-weight: 400 !important;
+}
+
+.ModalHead h4 {
+  color: green !important;
+}
+
+.Form i {
+  color: green !important;
+}
+
+.Form i:hover {
+  color: black !important;
+}
+
+.Form input:focus {
+  border-bottom: 1px solid green !important;
+  box-shadow: 0 1px 0 0 green !important;
+}
+.Form input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="message"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="tel"]:not(.browser-default):focus:not([readonly]) + label {
+  color: black !important;
+}
+
+.Form textarea:focus {
+  border-bottom: 1px solid green !important;
+  box-shadow: 0 1px 0 0 green !important;
+}
+
+.Form textarea + label {
+  color: black !important;
+}
+
+
+.BtnActive{
+  display: none;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+   .Modal{
+     height: 50px !important;
+     
+   }
+
+   .Form{
+     height: 80vh !important;
+   }
+
+}
+
+

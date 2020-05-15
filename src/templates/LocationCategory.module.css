@@ -1,0 +1,121 @@
+
+/* category part start */
+
+
+.Header{
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.Featured{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.Overlay{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Overlay h1{
+    color: white;
+    font-display: swap;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.ContentBox{
+    width: 100%;
+    height: auto;
+   justify-content: center;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.ContentBoxTwo{
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+}
+
+/* category part end */
+
+/* Locations */
+
+.Con{
+    width: 90%;
+    padding: 20px 40px 20px 40px;
+    
+   
+    
+}
+
+.CardImg{
+    min-height: 200px;
+    max-height: 200px;
+   
+}
+
+.CardBody{
+    min-height: 150px;
+    max-height: 150px;
+    text-align: center;
+}
+
+.Card{
+    min-width: 100%;
+    max-width: 100%;
+    margin: 20px 20px 20px 20px;
+    transform: scale(0.7);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+   
+}
+
+.Card:hover{
+    min-width: 100%;
+    max-width: 100%;
+    margin: 20px 20px 20px 20px;
+    transform: scale(1);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+   
+}
+
+.Col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.GetQuote {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: green;
+}

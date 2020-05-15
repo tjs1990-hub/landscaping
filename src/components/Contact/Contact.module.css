@@ -1,0 +1,125 @@
+.BtnCon button:hover {
+  background-color: white !important;
+  color: green !important ;
+}
+.BodyClass{
+ 
+  
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.BtnCon button {
+  background-color: black !important;
+  color: white !important;
+  font-size: 16px;
+}
+
+.BtnCon a {
+  color: #fff !important;
+  display: inherit;
+}
+
+.BtnCon {
+  height: auto;
+  width: 100%;
+}
+
+.Link {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Link:hover{
+  color: green;
+}
+
+.Modal {
+  z-index: 199;
+}
+
+.Tel {
+  color: green;
+  margin-left: 10px;
+}
+
+.Tel:hover {
+  color: black;
+}
+
+.Phone {
+  margin-right: 10px;
+}
+
+.FormBtn {
+  border: 2px solid green !important;
+  background-color: transparent !important;
+  color: green !important;
+}
+
+.FormBtn:hover {
+  border: 2px solid green !important;
+  background-color: black !important;
+  color: white !important;
+}
+
+.ModalHead {
+  font-weight: 400 !important;
+}
+
+.ModalHead h4 {
+  color: green !important;
+}
+
+.Form i {
+  color: green !important;
+}
+
+.Form i:hover {
+  color: black !important;
+}
+
+.Form input:focus {
+  border-bottom: 1px solid green !important;
+  box-shadow: 0 1px 0 0 green !important;
+}
+.Form input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="message"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="tel"]:not(.browser-default):focus:not([readonly]) + label {
+  color: black !important;
+}
+
+.Form textarea:focus {
+  border-bottom: 1px solid green !important;
+  box-shadow: 0 1px 0 0 green !important;
+}
+
+.Form textarea + label {
+  color: black !important;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .Form{
+    height: 80vh !important;
+  }
+
+  .Modal {
+    height: 40vh !important;
+  }
+
+  .Input {
+    width: 75% !important;
+    height: 30px !important;
+  }
+
+
+}

@@ -1,0 +1,451 @@
+
+.CopyRight{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   font-size: 17px;
+    
+}
+
+.CopyRight a{
+    color: white;
+}
+
+.CopyRight a:hover{
+    color: green;
+}
+
+.CopyRight span{
+    color: white;
+}
+
+.LogoTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Logo {
+    margin: 0;
+    padding: 0;
+    float: none;
+    max-width: 200px;
+    max-height: 100px;
+    visibility: visible;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  }
+
+  .Logo2 {
+    margin: 0;
+    padding: 0;
+    float: none;
+    max-width: 200px;
+    max-height: 100px;
+    visibility: hidden;
+    transition-property: all;
+    transition-delay: 0.3s;
+    transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+   
+  }
+
+.ButTwo{
+    visibility: hidden !important;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+
+
+}
+
+.ButTwo:focus{
+    outline: none;
+}
+
+.But:focus{
+    outline: none;
+
+}
+
+.Wrapper{
+    height: 100vh;
+    z-index: 200000;
+    position: fixed;
+    background-color: black;
+    width: 30%;
+    overflow: hidden;
+    transform: translateX(0px);
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    
+}
+.WrapperTwo{
+    height: 100vh;
+    z-index: 200000;
+    position: fixed;
+    background-color: green;
+    width: 30%;
+    overflow: hidden;
+    transform: translateX(-600px);
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    
+}
+
+.SideDrawer{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+
+
+.SideDrawer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    margin-top: 70px;
+   
+    
+}
+
+.SideDrawer a{
+    color: white;
+    font-weight: 400;
+  
+
+}
+
+.SideDrawer a:hover{
+    color: green;
+    font-weight: 500;
+}
+
+.Toggle{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.But{
+    outline: none;
+}
+
+.But:active{
+    outline: none;
+}
+
+.But:focus{
+    outline: none;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+   { 
+
+    .LogoTop{
+       height: auto;
+       padding: auto;
+       margin-top: 20px;
+       padding-right: 20px;
+    }
+
+    .Toggle{
+        height: 30px;
+        padding-top: 0px !important;
+        margin-top: 0px !important;
+      
+
+    }
+
+    .SideDrawer ul{
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 0;
+        font-size: 60px;
+        margin-top: 30px;
+        
+    }
+
+
+
+    .Wrapper{
+        width: 80%;
+        font-size: 50px;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 640px) 
+
+  { 
+
+    .LogoTop{
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .Toggle{
+        height: 30px;
+        padding-top: 20px;
+    }
+    .SideDrawer ul{
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 0px;
+        font-size: 60px;
+        
+    }
+
+    .SideDrawer a {
+        font-size: 50px;
+    }
+    .Wrapper{
+        width: 80%;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) 
+   { 
+
+    .LogoTop{
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .Toggle{
+        height: 30px;
+        margin-top: 20px;
+    }
+    .SideDrawer ul{
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 10px;
+        font-size: 30px;
+        
+    }
+    .SideDrawer a {
+        font-size: 25px;
+    }
+
+    .Wrapper{
+        width: 80%;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  { 
+    .Toggle{
+        height: 30px;
+        margin-top: 0;
+
+    }
+
+    .SideDrawer a {
+        font-size: 40px;
+    }
+
+    .Wrapper{
+        width: 80%;
+    }
+
+}
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  { 
+    .Toggle{
+        height: 30px;
+    }
+
+    .SideDrawer a {
+        font-size: 40px;
+    }
+
+    .SideDrawer ul{
+       margin-top: 40px;
+    }
+
+    .Wrapper{
+        width: 80%;
+    }
+
+}
+
+/* ----------- Pixel 2----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 731px) 
+  { 
+
+    .LogoTop{
+        padding-left: 10px;
+    }
+    .Toggle{
+        height: 30px;
+        margin-top: 0;
+
+    }
+
+    .SideDrawer a {
+        font-size: 30px;
+    }
+
+    .Wrapper{
+        width: 80%;
+    }
+
+    .SideDrawer ul{
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 10px;
+        font-size: 20px;
+        
+    }
+
+}
+
+/* ----------- Pixel 2 xl----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 823px) 
+  { 
+
+    .LogoTop{
+        padding-left: 10px;
+    }
+    .Toggle{
+        height: 30px;
+        margin-top: 0;
+
+    }
+
+    .SideDrawer a {
+        font-size: 35px;
+    }
+
+    .Wrapper{
+        width: 80%;
+    }
+
+    .SideDrawer ul{
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 30px;
+        font-size: 20px;
+        
+    }
+
+}
+/* ----------- Pixel 2 xl----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  { 
+
+    .LogoTop{
+        padding-left: 10px;
+    }
+    .Toggle{
+        height: 30px;
+        margin-top: 0;
+
+    }
+
+    .SideDrawer a {
+        font-size: 28px;
+    }
+
+    .Wrapper{
+        width: 80%;
+    }
+
+    .SideDrawer ul{
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 30px;
+        font-size: 20px;
+        
+    }
+
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  { 
+
+    .LogoTop{
+        padding-left: 10px;
+    }
+    .Toggle{
+        height: 30px;
+        margin-top: 0;
+
+    }
+
+    .SideDrawer a {
+        font-size: 35px;
+    }
+
+    .Wrapper{
+        width: 80%;
+    }
+
+    .SideDrawer ul{
+        height: 100%;
+        justify-content: flex-start;
+        padding-top: 30px;
+        font-size: 20px;
+        
+    }
+
+}
+
+
+

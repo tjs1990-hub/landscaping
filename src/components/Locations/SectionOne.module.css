@@ -1,0 +1,113 @@
+.Con{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative !important;
+    flex-direction: column;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+
+.Con h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+
+.TextTop {
+    padding: 20px;
+    font-size: 16px;
+    max-width: 800px;
+}
+
+.ImgOneCon{
+    height: 500px;
+    width: 100%;
+   
+    margin-top: 100px;
+}
+
+.ImageOne{
+     height: 100%;
+     width: 100%;
+     margin-bottom: 100px;
+}
+
+
+.TextMiddle {
+    margin-top: 50px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+
+   
+}
+
+.TextMiddle ul{
+    list-style: none;
+}
+
+
+.TbWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TextBottom{
+    margin: 30px;
+    max-width: 800px;
+}
+
+.TextBottom h1, h2, h3, h4{
+    font-weight: bold;
+}
+
+.Quote{
+    width: 100%;
+    height: auto;
+    background-color: green;
+    margin-bottom: 100px;
+}
+
+.HowMuchCon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+     text-align: center;
+}
+
+
+.HowMuch{
+    max-width: 800px;
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      .Con h2{
+          text-align: center;
+      }
+
+    
+        .GM{
+            height: auto;
+        } 
+
+}

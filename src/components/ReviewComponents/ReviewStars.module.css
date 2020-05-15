@@ -1,0 +1,110 @@
+.Wrapper{
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.Text{
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-weight: 900;
+    font-size: 150px;
+}
+
+.G{
+    color: #4081ed;
+}
+
+.O{
+    color: #e44133;
+}
+
+.O2{
+    color: #f4b706;
+}
+
+.G2{
+    color: #4081ed;
+}
+
+.L{
+    color: #32a351;
+}
+
+.E{
+    color: #e44133;
+}
+
+.R{
+   
+    font-size: 40px;
+    text-transform: uppercase;
+    color: black;
+    -webkit-text-fill-color:grey; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: whitesmoke;
+
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    .Text{
+        font-size: 50px;
+    }
+
+    .R{
+        font-size: 30px;
+        
+            color: black;
+            -webkit-text-fill-color:grey; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: whitesmoke;
+          
+        
+    }
+ }
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) {
+    .Text{
+        font-size: 70px;
+    }
+
+    .R{
+        font-size: 40px;
+        
+            color: black;
+            -webkit-text-fill-color:grey; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: whitesmoke;
+          
+        
+    }
+ }
+
+ @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .Text{
+        font-size: 50px;
+    }
+
+    .R{
+        font-size: 30px;
+        
+            color: black;
+            -webkit-text-fill-color:grey; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: whitesmoke;
+          
+        
+    }
+
+    .Star{
+        font-size: 20px;
+    }
+ }

@@ -1,0 +1,151 @@
+.BtnCon button:hover {
+  background-color: white !important;
+  color: green !important ;
+}
+
+.BodyClass{
+   overflow: hidden;
+   position: fixed;
+}
+
+.BtnCon button {
+  background-color: black !important;
+  color: white !important;
+  font-size: 16px;
+}
+
+.BtnCon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 160px;
+ 
+}
+
+.BtnCon h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.BtnCon h2:hover {
+  color: black;
+}
+
+.Grow{
+  height: 100vh;
+}
+
+.FormBtn {
+  border: 2px solid green !important;
+  background-color: transparent !important;
+  color: green !important;
+}
+
+.FormBtn:hover {
+  border: 2px solid green !important;
+  background-color: black !important;
+  color: white !important;
+}
+
+.ModalHead {
+  font-weight: 400 !important;
+}
+
+.ModalHead h4 {
+  color: green !important;
+}
+
+.Form i {
+  color: green !important;
+}
+
+.Form i:hover {
+  color: black !important;
+}
+
+.Form input:focus {
+  border-bottom: 1px solid green !important;
+  box-shadow: 0 1px 0 0 green !important;
+}
+.Form input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="message"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="tel"]:not(.browser-default):focus:not([readonly]) + label {
+  color: black !important;
+}
+
+.Form textarea:focus {
+  border-bottom: 1px solid green !important;
+  box-shadow: 0 1px 0 0 green !important;
+}
+
+.Form textarea + label {
+  color: black !important;
+}
+
+/* ----------- Google Pixel ----------- */
+
+/* Portrait and Landscape */
+@media screen and (device-width: 411px) and (device-height: 731px) {
+  .BtnCon button {
+    position: relative;
+    top: 50px;
+  }
+}
+
+/* ----------- Google Pixel 2 xl----------- */
+
+/* Portrait and Landscape */
+@media screen and (device-width: 411px) and (device-height: 823px) {
+  .BtnCon button {
+    position: relative;
+    top: 100px;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .BtnCon button {
+    position: relative;
+    top: 40px;
+
+  }
+
+
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .BtnCon button {
+    position: relative;
+    top: 80px;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .BtnCon button {
+    position: relative;
+    top: 100px;
+  }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .BtnCon button {
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+  }
+}

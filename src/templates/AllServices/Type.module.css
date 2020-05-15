@@ -1,0 +1,23 @@
+.Con{
+  width: 100%;
+  color: white;
+  
+}
+
+.Con h2{
+  text-align:  center;
+}
+
+.Con p {
+  text-align: center;
+}
+
+.Con ul{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+

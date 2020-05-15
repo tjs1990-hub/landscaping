@@ -1,0 +1,14 @@
+.Wrapper {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.Background {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  background-color: green;
+}
