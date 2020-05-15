@@ -103,7 +103,7 @@ export default class Contact extends Component {
           >
             Get In Touch
             <br />
-            <a href='tel:07479502162'>07479502162</a>
+          
           </MDBModalHeader>
           <MDBModalBody>
             <form onSubmit={this.onSubmit} className={classes.Form}>
