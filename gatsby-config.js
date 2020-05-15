@@ -16,6 +16,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-favicon`,
+    'gatsby-plugin-offline',
     
     {
       resolve: `gatsby-source-google-places`,
