@@ -62,13 +62,6 @@ module.exports = {
         gtmPreview: "env-4",
       },
     },
-
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `tm_landscapeswy`,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

@@ -10,11 +10,9 @@ import GetQuote from "../components/HomeComponents/GetQuote"
 import Animation from "../components/Animation"
 import Qualifications from "../components/qualifications/Qualifications"
 import SEO from "../components/seo"
-import Instagram from "../components/Instagram/Instagram"
 import Img from 'gatsby-image'
 import og from '../images/og.jpg'
-import ServiceSlider from '../components/ServiceSlider/ServiceSlider'
-import TestCom from "../components/testCom"
+
 
 
 
@@ -174,7 +172,7 @@ const Index = props => {
                   <GetQuote />
                 </div>
               </Animation>
-              <Instagram />
+            
           
               <Qualifications />
 
