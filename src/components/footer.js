@@ -16,7 +16,7 @@ const Footer = () => {
             src='https://admin.fencingleeds.co/wp-content/uploads/2020/04/cropped-Asset-2@2x.png' 
             className={classes.FooterLogo}
             />
-            <p>222 Leeds Old Road<br/> Batley<br/>WF179AQ
+            <p>9 Copley Hill<br/> Batley<br/>WF170DT
             </p>
               
           </MDBCol>
