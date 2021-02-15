@@ -12,8 +12,7 @@ import {
   MDBRow,
 } from "mdbreact"
 import { useMediaQuery } from 'react-responsive'
-// import Flickity from 'react-flickity-component'
-import Flickity from '../Slider';
+import Flickity from 'react-flickity-component'
 
 import './flickity.css'
 import classes from "./AllServices.module.css"
