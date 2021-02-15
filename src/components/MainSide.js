@@ -13,7 +13,7 @@ const MainSide = (props) => {
         <div className={classes.Toggle}>
 
           <VortexReverse
-            width='40'
+            width='20'
             active={props.active}
             onClick={props.toggleCollapse}
             color={props.active ? 'rgb(244, 244, 244)' : 'rgb(135, 135, 135)'}

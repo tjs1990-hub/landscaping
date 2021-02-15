@@ -9,6 +9,7 @@ import Qualifications from "../components/qualifications/Qualifications"
 import GetQuote from "../components/HomeComponents/GetQuote"
 import SEO from "../components/seo"
 
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -118,6 +119,8 @@ export default () => (
 
             <Qualifications />
           </div>
+
+      
         </Layout>
       </React.Fragment>
     )}

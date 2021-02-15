@@ -10,7 +10,6 @@ import GetQuote from "../components/HomeComponents/GetQuote"
 import Animation from "../components/Animation"
 import Qualifications from "../components/qualifications/Qualifications"
 import SEO from "../components/seo"
-import Img from 'gatsby-image'
 import og from '../images/og.jpg'
 
 

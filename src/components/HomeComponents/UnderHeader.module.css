@@ -3,7 +3,7 @@
 }
 
 .Col {
-  border: 2px solid white;
+
   margin-bottom: 50px;
 }
 
@@ -22,9 +22,7 @@
   color: red;
 }
 
-.Welcome {
-  border: 2px solid white;
-}
+
 .Welcome h2 {
   font-weight: bold;
   margin-bottom: 20px;

@@ -31,7 +31,7 @@ const TopMenu = ( props) => {
         </MDBCol>
         <MDBCol md="4" className={classes.ColThree}>
         <VortexReverse 
-        width='40'
+        width='20'
       active={props.active}
       onClick={props.toggleCollapse}
       color=  {props.active ? 'green' : 'rgb(244, 244, 244)'}

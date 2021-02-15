@@ -63,6 +63,8 @@
 .Row{
   height: 100%;
   width: 100%;
+  margin: 0%;
+  padding: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,9 +74,11 @@
 .Col{
 height: 100%;
 width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+margin: 0%;
+padding: 0%;
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
 
@@ -84,6 +88,8 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0%;
+  padding: 0%;
   
   
 }
@@ -92,9 +98,13 @@ width: 100%;
 .ColThree{
   width: 100%;
   height: 100%;
+  margin: 0%;
+  padding: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  
  
   text-align: center;
 }
@@ -111,6 +121,8 @@ width: 100%;
     height: auto;
     flex-direction: column;
     padding: 20px;
+    margin: 0%;
+    padding: 10px;
   }
 
   .Col{
@@ -120,11 +132,12 @@ width: 100%;
   }
   .ColTwo{
      padding-top: 10px;
-    flex-direction: column;
+   
   }
   .ColThree{
     height: auto;
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
   }
 
 
@@ -155,8 +168,8 @@ width: 100%;
     flex-direction: column;
   }
   .ColThree{
-    height: auto;
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
   }
 
 
@@ -187,8 +200,8 @@ width: 100%;
     flex-direction: column;
   }
   .ColThree{
-    height: auto;
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
   }
 
 
@@ -221,8 +234,8 @@ width: 100%;
     flex-direction: column;
   }
   .ColThree{
-    height: auto;
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
   }
 
 
@@ -254,8 +267,8 @@ width: 100%;
     flex-direction: column;
   }
   .ColThree{
-    height: auto;
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
   }
 
 
@@ -287,8 +300,8 @@ width: 100%;
     flex-direction: column;
   }
   .ColThree{
-    height: auto;
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
   }
 
 
@@ -320,8 +333,8 @@ width: 100%;
     flex-direction: column;
   }
   .ColThree{
-    height: auto;
-    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
   }
 
 
