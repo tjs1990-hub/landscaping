@@ -12,7 +12,8 @@ import {
   MDBRow,
 } from "mdbreact"
 import { useMediaQuery } from 'react-responsive'
-import Flickity from 'react-flickity-component'
+// import Flickity from 'react-flickity-component'
+import Slider from '../Slider'
 
 import './flickity.css'
 import classes from "./AllServices.module.css"
@@ -83,7 +84,7 @@ const Allservices = () => {
                 )
               })}
             </MDBRow>) : (
-                <Flickity
+                <Slider
                   className={'carousel'} // default ''
                   elementType={'div'} // default 'div'
                 >
@@ -108,7 +109,7 @@ const Allservices = () => {
                       </MDBCardBody>
                     </MDBCard>
                   )}
-                </Flickity>
+                </Slider>
               )}
           </MDBContainer>
         </React.Fragment>
