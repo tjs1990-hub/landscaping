@@ -45,7 +45,7 @@ const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid className={classes.Copy}> 
-          &copy; {new Date().getFullYear()} <a> TM Landcapes </a>
+          &copy; {new Date().getFullYear()} <a> Zaya Enterprises Limited 13124098 - Trading As TJM Landcapes </a>
           <p>
             Site by <a href="https://www.instagram.com/tjs.io/">Tjs.io</a>
           </p>
