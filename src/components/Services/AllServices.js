@@ -56,7 +56,7 @@ const Allservices = () => {
       render={props => (
         <React.Fragment>
           <MDBContainer className={classes.Con}>
-            {!isTabletOrMobileDevice ? (<MDBRow className={classes.Row}>
+            {!isTabletOrMobileDevice || true ? (<MDBRow className={classes.Row}>
               {props.allWordpressWpServices.edges.map(edge => {
                 return (
                   (<MDBCol md="4" key={edge.node.slug}>
