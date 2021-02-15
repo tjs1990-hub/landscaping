@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
 
 export default React.memo(
@@ -16,12 +16,12 @@ export default React.memo(
     url,
     total,
     rating
-    
+
   }) => {
     const baseSchema = [
       {
         "@context": "http://schema.org",
-        "@type": "LocalBusiness",    
+        "@type": "LocalBusiness",
         "name": "TJM Landscapes",
         "address": {
           "@type": "PostalAddress",
@@ -30,7 +30,7 @@ export default React.memo(
           "addressRegion": "West Yorkshire",
           "postalCode": "WF17 9AQ"
         },
-        "telePhone": "07479502162",
+        "telePhone": "07746273202",
         "geo": {
           "@type": "GeoCoordinates",
           "latitude": "53.717018",
@@ -38,9 +38,9 @@ export default React.memo(
         },
         "url": "https://landscapegardenerswestyorkshire.com/",
         "logo": "https://admin.fencingleeds.co/wp-content/uploads/2020/01/cropped-tmlogo-3.jpg",
-        "image":"https://landscapegardenerswestyorkshire.com/static/0e54d0805510ee651e74338ac0b3673b/b17c1/header-img.jpg",
-      
-        "priceRange" : "£0 - £100,000",
+        "image": "https://landscapegardenerswestyorkshire.com/static/0e54d0805510ee651e74338ac0b3673b/b17c1/header-img.jpg",
+
+        "priceRange": "£0 - £100,000",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": rating,
@@ -49,58 +49,58 @@ export default React.memo(
       }
     ];
 
-    
+
 
     const schema = isBlogPost
       ? [
-          ...baseSchema,
-          {
-            '@context': 'http://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                item: {
-                  '@id': url,
-                  name: title,
-                  image,
-                },
+        ...baseSchema,
+        {
+          '@context': 'http://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              item: {
+                '@id': url,
+                name: title,
+                image,
               },
-            ],
+            },
+          ],
+        },
+        {
+          '@context': 'http://schema.org',
+          '@type': 'BlogPosting',
+          url,
+          name: title,
+          alternateName: defaultTitle,
+          headline: title,
+          image: {
+            '@type': 'ImageObject',
+            url: image,
           },
-          {
-            '@context': 'http://schema.org',
-            '@type': 'BlogPosting',
-            url,
-            name: title,
-            alternateName: defaultTitle,
-            headline: title,
-            image: {
-              '@type': 'ImageObject',
-              url: image,
-            },
-            description,
-            author: {
-              '@type': 'Person',
-              name: author.name,
-            },
-            publisher: {
-              '@type': 'Organization',
-              url: organization.url,
-              logo: organization.logo,
-              name: organization.name,
-            },
-            mainEntityOfPage: {
-              '@type': 'WebSite',
-              '@id': canonicalUrl,
-            },
-            datePublished,
+          description,
+          author: {
+            '@type': 'Person',
+            name: author.name,
           },
-        ]
+          publisher: {
+            '@type': 'Organization',
+            url: organization.url,
+            logo: organization.logo,
+            name: organization.name,
+          },
+          mainEntityOfPage: {
+            '@type': 'WebSite',
+            '@id': canonicalUrl,
+          },
+          datePublished,
+        },
+      ]
       : baseSchema;
 
-      
+
 
     return (
       <Helmet>
