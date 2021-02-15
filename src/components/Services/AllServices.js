@@ -51,29 +51,31 @@ const Allservices = () => {
         <React.Fragment>
           <MDBContainer className={classes.Con}>
             <MDBRow className={classes.Row}>
-              {props.allWordpressWpServices.edges.map(edge => (
-                <MDBCol md="4" key={edge.node.slug}>
-                  <MDBCard className={classes.Card}>
-                    <Img
-                      
-                      fluid={edge.node.acf.header_img.localFile.childImageSharp.fluid}
-                      waves
-                      className={classes.CardImg}
-                    />
-                    <MDBCardBody>
-                      <MDBCardTitle className={classes.CTitle}>{renderHTML(edge.node.title)}</MDBCardTitle>
+              {props.allWordpressWpServices.edges.map(edge => {
+                return (
+                  <MDBCol md="4" key={edge.node.slug}>
+                    <MDBCard className={classes.Card}>
+                      <Img
+                        // check edge has property
+                        fluid={edge.node ? edge.node.acf.header_img.localFile.childImageSharp.fluid : ''}
+                        waves
+                        className={classes.CardImg}
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle className={classes.CTitle}>{renderHTML(edge.node.title)}</MDBCardTitle>
 
-                      <span className="card-text">
-                        {renderHTML(edge.node.excerpt)}
-                      </span>
+                        <span className="card-text">
+                          {renderHTML(edge.node.excerpt)}
+                        </span>
 
-                      <AniLink paintDrip duration={1.2} color='green' direction="up" to={`/services/${edge.node.slug}`}>
-                        <MDBBtn color="black">Read More</MDBBtn>
-                      </AniLink>
-                    </MDBCardBody>
-                  </MDBCard>
-                </MDBCol>
-              ))}
+                        <AniLink paintDrip duration={1.2} color='green' direction="up" to={`/services/${edge.node.slug}`}>
+                          <MDBBtn color="black">Read More</MDBBtn>
+                        </AniLink>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </MDBCol>
+                )
+              })}
             </MDBRow>
           </MDBContainer>
         </React.Fragment>
