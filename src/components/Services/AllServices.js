@@ -84,7 +84,7 @@ const Allservices = () => {
               })}
             </MDBRow>) : (
                 <Flickity
-                  className={'carousel'} // default ''
+                  className={'carousel'}
                   elementType={'div'} // default 'div'
                 >
                   {props.allWordpressWpServices.edges.map(edge =>
