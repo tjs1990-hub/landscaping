@@ -68,7 +68,7 @@ const Allservices = () => {
         return (
           <React.Fragment>
             <MDBContainer className={classes.Con}>
-              {!isTabletOrMobileDevice && false ? (<MDBRow className={classes.Row}>
+              {!isTabletOrMobileDevice || true ? (<MDBRow className={classes.Row}>
                 {props.allWordpressWpServices.edges.map(edge => {
                   if (edge.node.acf.header_img.localFile) {
                     return (
@@ -103,8 +103,8 @@ const Allservices = () => {
                   <Slider
                     {...settings}
                   >
-                    {props.allWordpressWpServices.edges.map(edge =>
-                      <MDBCard className={classes.Card} key={edge.node.slug}>
+                    {props.allWordpressWpServices.edges.map(edge => {
+                      console.log(edge); return (<MDBCard className={classes.Card} key={edge.node.slug}>
                         {/* <Img
                           // check edge has property
                           fluid={edge.node ? edge.node.acf.header_img.localFile.childImageSharp.fluid : ''}
@@ -122,13 +122,14 @@ const Allservices = () => {
                           <MDBBtn color="black">Read More</MDBBtn>
                         </AniLink> */}
                         </MDBCardBody>
-                      </MDBCard>
+                      </MDBCard>)
+                    }
                     )}
                   </Slider>
                 )}
-              <Slider {...settings}>
+              {/* <Slider {...settings}>
                 {[1, 2, 3, 4, 5].map(item => (<p key={item}>{item}</p>))}
-              </Slider>
+              </Slider> */}
             </MDBContainer>
           </React.Fragment>
         )
