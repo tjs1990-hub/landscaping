@@ -30,7 +30,7 @@ const Allservices = () => {
   })
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1
@@ -129,6 +129,9 @@ const Allservices = () => {
                   </Slider>
                 )}
             </MDBContainer>
+            <Slider {...settings}>
+              {[1, 2, 3, 4, 5, 6, 7].map(n => <div className="text-white">{n}</div>)}
+            </Slider>
           </React.Fragment>
         )
       }}
