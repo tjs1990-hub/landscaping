@@ -104,10 +104,31 @@ const Allservices = () => {
                     {...settings}
                   >
                     {props.allWordpressWpServices.edges.map(edge =>
-                      <p>Test</p>
+                      <MDBCard className={classes.Card} key={edge.node.slug}>
+                        {/* <Img
+                          // check edge has property
+                          fluid={edge.node ? edge.node.acf.header_img.localFile.childImageSharp.fluid : ''}
+                          waves
+                          className={classes.CardImg}
+                        /> */}
+                        <MDBCardBody>
+                          <MDBCardTitle className={classes.CTitle}>{renderHTML(edge.node.title)}</MDBCardTitle>
+
+                          <span className="card-text">
+                            {renderHTML(edge.node.excerpt)}
+                          </span>
+
+                          {/* <AniLink paintDrip duration={1.2} color='green' direction="up" to={`/services/${edge.node.slug}`}>
+                          <MDBBtn color="black">Read More</MDBBtn>
+                        </AniLink> */}
+                        </MDBCardBody>
+                      </MDBCard>
                     )}
                   </Slider>
                 )}
+              <Slider {...settings}>
+                {[1, 2, 3, 4, 5].map(item => (<p key={item}>{item}</p>))}
+              </Slider>
             </MDBContainer>
           </React.Fragment>
         )
