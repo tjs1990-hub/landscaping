@@ -106,7 +106,7 @@ const Allservices = () => {
                     {...settings}
                   >
                     {props.allWordpressWpServices.edges.map(edge =>
-                      edge
+                      <p>edge</p>
                     )}
                   </Slider>
                 )}
