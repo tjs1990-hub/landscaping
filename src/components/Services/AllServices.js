@@ -58,6 +58,7 @@ const Allservices = () => {
       `}
       render={props => {
         // console.log(props);
+        alert(isTabletOrMobileDevice);
         return (
           <React.Fragment>
             <MDBContainer className={classes.Con}>
