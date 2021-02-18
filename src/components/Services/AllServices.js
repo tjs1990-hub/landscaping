@@ -27,6 +27,7 @@ import Img from 'gatsby-image'
 
 const Allservices = () => {
   const MAX_LENGTH = 83
+  const breakpoints = useBreakpoint();
   return (
     <StaticQuery
       query={graphql`
