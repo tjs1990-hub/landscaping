@@ -68,7 +68,7 @@ const Allservices = () => {
         return (
           <React.Fragment>
             <MDBContainer className={classes.Con}>
-              {!isTabletOrMobileDevice ? (<MDBRow className={classes.Row}>
+              {!isTabletOrMobileDevice && false ? (<MDBRow className={classes.Row}>
                 {props.allWordpressWpServices.edges.map(edge => {
                   if (edge.node.acf.header_img.localFile) {
                     return (
