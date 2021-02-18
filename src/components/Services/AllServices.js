@@ -12,6 +12,7 @@ import {
   MDBRow,
 } from "mdbreact"
 import { useMediaQuery } from 'react-responsive'
+import { isMobile } from 'react-device-detect';
 // import Flickity from 'react-flickity-component'
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -60,7 +61,7 @@ const Allservices = () => {
         // console.log(props);
         return (
           <React.Fragment>
-            <h1 className="text-white">{isTabletOrMobileDevice}</h1>
+            <h1 className="text-white">{isMobile}</h1>
             <MDBContainer className={classes.Con}>
               {!isTabletOrMobileDevice ? (<MDBRow className={classes.Row}>
                 {props.allWordpressWpServices.edges.map(edge => (
