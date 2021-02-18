@@ -13,7 +13,7 @@ import {
 } from "mdbreact"
 import { useMediaQuery } from 'react-responsive'
 // import Flickity from 'react-flickity-component'
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -68,7 +68,7 @@ const Allservices = () => {
         return (
           <React.Fragment>
             <MDBContainer className={classes.Con}>
-              {!isTabletOrMobileDevice || true ? (<MDBRow className={classes.Row}>
+              {!isTabletOrMobileDevice ? (<MDBRow className={classes.Row}>
                 {props.allWordpressWpServices.edges.map(edge => {
                   if (edge.node.acf.header_img.localFile) {
                     return (
@@ -76,7 +76,7 @@ const Allservices = () => {
                         <MDBCard className={classes.Card}>
                           <Img
                             // check edge has property
-                            fluid={edge.node.acf.header_img.localFile ? edge.node.acf.header_img.localFile.childImageSharp.fluid : ''}
+                            fluid={edge.node.acf.header_img.localFile.childImageSharp.fluid}
                             waves
                             className={classes.CardImg}
                           />
@@ -87,9 +87,9 @@ const Allservices = () => {
                               {renderHTML(edge.node.excerpt)}
                             </span>
 
-                            {/* <AniLink paintDrip duration={1.2} color='green' direction="up" to={`/services/${edge.node.slug}`}>
-                          <MDBBtn color="black">Read More</MDBBtn>
-                        </AniLink> */}
+                            <Link to={`/services/${edge.node.slug}`}>
+                              <MDBBtn color="black">Read More</MDBBtn>
+                            </Link>
                           </MDBCardBody>
                         </MDBCard>
                       </MDBCol>)
@@ -100,36 +100,31 @@ const Allservices = () => {
 
                 })}
               </MDBRow>) : (
-                  <Slider
-                    {...settings}
+                  <div
+                    className={classes.scrollingWrapperFlexbox}
                   >
-                    {props.allWordpressWpServices.edges.map(edge => {
-                      console.log(edge); return (<MDBCard className={classes.Card} key={edge.node.slug}>
-                        {/* <Img
-                          // check edge has property
-                          fluid={edge.node ? edge.node.acf.header_img.localFile.childImageSharp.fluid : ''}
-                          waves
-                          className={classes.CardImg}
-                        /> */}
-                        <MDBCardBody>
-                          <MDBCardTitle className={classes.CTitle}>{renderHTML(edge.node.title)}</MDBCardTitle>
+                    {props.allWordpressWpServices.edges.map(edge => (<MDBCard className={classes.Card} key={edge.node.slug}>
+                      <Img
+                        // check edge has property
+                        fluid={edge.node.acf.header_img.localFile.childImageSharp.fluid}
+                        waves
+                        className={classes.CardImg}
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle className={classes.CTitle}>{renderHTML(edge.node.title)}</MDBCardTitle>
 
-                          <span className="card-text">
-                            {renderHTML(edge.node.excerpt)}
-                          </span>
+                        <span className="card-text">
+                          {renderHTML(edge.node.excerpt)}
+                        </span>
 
-                          {/* <AniLink paintDrip duration={1.2} color='green' direction="up" to={`/services/${edge.node.slug}`}>
+                        <Link to={`/services/${edge.node.slug}`}>
                           <MDBBtn color="black">Read More</MDBBtn>
-                        </AniLink> */}
-                        </MDBCardBody>
-                      </MDBCard>)
-                    }
+                        </Link>
+                      </MDBCardBody>
+                    </MDBCard>)
                     )}
-                  </Slider>
+                  </div>
                 )}
-              {/* <Slider {...settings}>
-                {[1, 2, 3, 4, 5].map(item => (<p key={item}>{item}</p>))}
-              </Slider> */}
             </MDBContainer>
           </React.Fragment>
         )

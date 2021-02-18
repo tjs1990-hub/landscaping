@@ -1,184 +1,177 @@
 .Con {
-  margin-top: 100px;
-  text-align: center;
-  margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 .CardImg {
-  min-width: 100%;
-  min-height: 200px;
-  max-height: 200px;
+    min-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
 }
 
 .Row {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .Card {
-  -webkit-box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
--moz-box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
-box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
-transform: scale(0.8);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-duration: 1000ms;
-  margin-bottom: 30px;
-  width: 100%;
+    -webkit-box-shadow: -1px 2px 22px -7px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -1px 2px 22px -7px rgba(0, 0, 0, 1);
+    box-shadow: -1px 2px 22px -7px rgba(0, 0, 0, 1);
+    transform: scale(0.8);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 1000ms;
+    margin-bottom: 30px;
+    width: 100%;
+    flex: 0 0 auto;
 }
 
 .Card:hover {
-  -webkit-box-shadow: -1px -1px 29px 2px rgba(255,255,255,1);
--moz-box-shadow: -1px -1px 29px 2px rgba(255,255,255,1);
-box-shadow: -1px -1px 29px 2px rgba(255,255,255,1);
-   transform: scale(1.2);
-   transition-duration: 1000ms;
-   transition-property: all;
-   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  background-color: rgb(0, 128, 0);
-  color: #fff;
+    -webkit-box-shadow: -1px -1px 29px 2px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -1px -1px 29px 2px rgba(255, 255, 255, 1);
+    box-shadow: -1px -1px 29px 2px rgba(255, 255, 255, 1);
+    transform: scale(1.2);
+    transition-duration: 1000ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: rgb(0, 128, 0);
+    color: #fff;
 }
 
 .Card:hover p {
-  color: #fff;
+    color: #fff;
 }
 
-.CTitle{
-  color: #000;
+.CTitle {
+    color: #000;
 }
 
-.Card:hover .CTitle{
-  color: #fff;
+.Card:hover .CTitle {
+    color: #fff;
 }
+
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
+
 /* Portrait and Landscape */
+
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  .Con {
-    display: flex;
-    justify-content: center;
-  }
-
-  .Card {
-    width: 100%;
-  }
-
-  .Card:hover{
-    transform: scale(1);
-  }
+    .Con {
+        display: flex;
+        justify-content: center;
+    }
+    .Card {
+        width: 100%;
+    }
+    .Card:hover {
+        transform: scale(1);
+    }
 }
+
 @media screen and (device-width: 411px) and (device-height: 731px) {
-  .Con {
-    display: flex;
-    justify-content: center;
-  }
-
-  .Card {
-    width: 100%;
-  }
-
-  .Card:hover{
-    transform: scale(0.9);
-  }
+    .Con {
+        display: flex;
+        justify-content: center;
+    }
+    .Card {
+        width: 100%;
+    }
+    .Card:hover {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (device-width: 411px) and (device-height: 823px) {
-  .Con {
-    display: flex;
-    justify-content: center;
-  }
-
-  .Card {
-    width: 100%;
-  }
-
-  .Card:hover{
-    transform: scale(0.9);
-  }
+    .Con {
+        display: flex;
+        justify-content: center;
+    }
+    .Card {
+        width: 100%;
+    }
+    .Card:hover {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (device-width: 320px) and (device-height: 568px) {
-  .Con {
-    display: flex;
-    justify-content: center;
-  }
-
-  .Card {
-    width: 100%;
-  }
-
-  .Card:hover{
-    transform: scale(0.9);
-  }
+    .Con {
+        display: flex;
+        justify-content: center;
+    }
+    .Card {
+        width: 100%;
+    }
+    .Card:hover {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (device-width: 375px) and (device-height: 667px) {
-  .Con {
-    display: flex;
-    justify-content: center;
-  }
-
-  .Card {
-    width: 100%;
-  }
-
-  .Card:hover{
-    transform: scale(0.9);
-  }
+    .Con {
+        display: flex;
+        justify-content: center;
+    }
+    .Card {
+        width: 100%;
+    }
+    .Card:hover {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (device-width: 414px) and (device-height: 736px) {
-  .Con {
-    display: flex;
-    justify-content: center;
-  }
-
-  .Card {
-    width: 100%;
-  }
-
-  .Card:hover{
-    transform: scale(0.9);
-  }
+    .Con {
+        display: flex;
+        justify-content: center;
+    }
+    .Card {
+        width: 100%;
+    }
+    .Card:hover {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (device-width: 375px) and (device-height: 812px) {
-  .Con {
-    display: flex;
-    justify-content: center;
-  }
-
-  .Card {
-    width: 100%;
-  }
-
-  .Card:hover{
-    transform: scale(0.9);
-  }
+    .Con {
+        display: flex;
+        justify-content: center;
+    }
+    .Card {
+        width: 100%;
+    }
+    .Card:hover {
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (device-width: 768px) and (device-height: 1024px) {
-  .Con {
-    display: flex;
-    justify-content: center;
-  }
-
-  
-
-  .Card {
-    -webkit-box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
-    -moz-box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
-    box-shadow: -1px 2px 22px -7px rgba(0,0,0,1);
-    transform: scale(0.6);
-      transition-property: all;
-      transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      transition-duration: 1000ms;
-      margin-bottom: 30px;
-      width: 100%;
-  }
-
-  .Card:hover{
-    transform: scale(0.8);
-  }
+    .Con {
+        display: flex;
+        justify-content: center;
+    }
+    .Card {
+        -webkit-box-shadow: -1px 2px 22px -7px rgba(0, 0, 0, 1);
+        -moz-box-shadow: -1px 2px 22px -7px rgba(0, 0, 0, 1);
+        box-shadow: -1px 2px 22px -7px rgba(0, 0, 0, 1);
+        transform: scale(0.6);
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition-duration: 1000ms;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .Card:hover {
+        transform: scale(0.8);
+    }
 }
