@@ -58,9 +58,9 @@ const Allservices = () => {
       `}
       render={props => {
         // console.log(props);
-        alert(isTabletOrMobileDevice);
         return (
           <React.Fragment>
+            <h1 className="text-white">{isTabletOrMobileDevice}</h1>
             <MDBContainer className={classes.Con}>
               {!isTabletOrMobileDevice ? (<MDBRow className={classes.Row}>
                 {props.allWordpressWpServices.edges.map(edge => (
