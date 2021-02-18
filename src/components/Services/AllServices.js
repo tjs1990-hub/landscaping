@@ -28,13 +28,6 @@ const Allservices = () => {
   const isTabletOrMobileDevice = useMediaQuery({
     query: '(max-device-width: 1224px)'
   })
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1
-  };
   console.log(isTabletOrMobileDevice)
   return (
     <StaticQuery
@@ -68,37 +61,30 @@ const Allservices = () => {
         return (
           <React.Fragment>
             <MDBContainer className={classes.Con}>
-              {!isTabletOrMobileDevice && false ? (<MDBRow className={classes.Row}>
-                {props.allWordpressWpServices.edges.map(edge => {
-                  if (edge.node.acf.header_img.localFile) {
-                    return (
-                      (<MDBCol md="4" key={edge.node.slug}>
-                        <MDBCard className={classes.Card}>
-                          <Img
-                            // check edge has property
-                            fluid={edge.node.acf.header_img.localFile.childImageSharp.fluid}
-                            waves
-                            className={classes.CardImg}
-                          />
-                          <MDBCardBody>
-                            <MDBCardTitle className={classes.CTitle}>{renderHTML(edge.node.title)}</MDBCardTitle>
+              {!isTabletOrMobileDevice ? (<MDBRow className={classes.Row}>
+                {props.allWordpressWpServices.edges.map(edge => (
+                  (<MDBCol md="4" key={edge.node.slug}>
+                    <MDBCard className={classes.Card}>
+                      <Img
+                        // check edge has property
+                        fluid={edge.node.acf.header_img.localFile.childImageSharp.fluid}
+                        waves
+                        className={classes.CardImg}
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle className={classes.CTitle}>{renderHTML(edge.node.title)}</MDBCardTitle>
 
-                            <span className="card-text">
-                              {renderHTML(edge.node.excerpt)}
-                            </span>
+                        <span className="card-text">
+                          {renderHTML(edge.node.excerpt)}
+                        </span>
 
-                            <Link to={`/services/${edge.node.slug}`}>
-                              <MDBBtn color="black">Read More</MDBBtn>
-                            </Link>
-                          </MDBCardBody>
-                        </MDBCard>
-                      </MDBCol>)
-                    )
-                  } else {
-                    return
-                  }
-
-                })}
+                        <Link to={`/services/${edge.node.slug}`}>
+                          <MDBBtn color="black">Read More</MDBBtn>
+                        </Link>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </MDBCol>)
+                ))}
               </MDBRow>) : (
                   <div
                     className={classes.scrollingWrapperFlexbox}
