@@ -11,8 +11,9 @@ import {
   MDBContainer,
   MDBRow,
 } from "mdbreact"
-import { useMediaQuery } from 'react-responsive'
-import { isMobile } from 'react-device-detect';
+import { useBreakpoint } from 'gatsby-plugin-breakpoints';
+// import { useMediaQuery } from 'react-responsive'
+// import { isMobile } from 'react-device-detect';
 // import Flickity from 'react-flickity-component'
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -26,10 +27,6 @@ import Img from 'gatsby-image'
 
 const Allservices = () => {
   const MAX_LENGTH = 83
-  const isTabletOrMobileDevice = useMediaQuery({
-    query: '(max-device-width: 1224px)'
-  })
-  console.log(isTabletOrMobileDevice)
   return (
     <StaticQuery
       query={graphql`
@@ -61,9 +58,8 @@ const Allservices = () => {
         // console.log(props);
         return (
           <React.Fragment>
-            <h1 className="text-white">{isMobile}</h1>
             <MDBContainer className={classes.Con}>
-              {!isTabletOrMobileDevice ? (<MDBRow className={classes.Row}>
+              {!breakpoints.md ? (<MDBRow className={classes.Row}>
                 {props.allWordpressWpServices.edges.map(edge => (
                   (<MDBCol md="4" key={edge.node.slug}>
                     <MDBCard className={classes.Card}>
