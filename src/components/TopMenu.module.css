@@ -34,9 +34,6 @@
     margin: 0;
     padding: 0;
     border-bottom: 2px solid green;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
 }
 
 .Logo {
