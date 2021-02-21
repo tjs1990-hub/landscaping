@@ -17,6 +17,7 @@ module.exports = {
         `gatsby-plugin-transition-link`,
         `gatsby-plugin-favicon`,
         'gatsby-plugin-breakpoints',
+        `gatsby-plugin-smoothscroll`,
 
 
         {

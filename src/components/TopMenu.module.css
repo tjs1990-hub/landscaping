@@ -1,343 +1,258 @@
-.MainBut:focus{
-
-  outline: none;
-
+.MainBut:focus {
+    outline: none;
 }
 
-.MainBut:active{
-  outline: none;
-}
-.ButOne{
-  visibility: hidden;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
-  outline: none;
-
+.MainBut:active {
+    outline: none;
 }
 
-.ButOne:focus{
-  outline: none;
+.ButOne {
+    visibility: hidden;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    outline: none;
 }
 
-.MainBut{
-  visibility: visible;
-  transition-property: all;
-  transition-delay: 1s;
-  transition-duration: 1s;
-  transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
-  outline: none;
+.ButOne:focus {
+    outline: none;
 }
 
-.Con{
-  background: black;
-  color: white;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-  border-bottom: 2px solid green;
-
+.MainBut {
+    visibility: visible;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    outline: none;
 }
+
+.Con {
+    background: black;
+    color: white;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid green;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
 .Logo {
-  margin: 0;
-  padding: 0;
-  float: none;
-  
-  max-height: 40px;
-  visibility: visible;
-  transition-property: all;
-  transition-delay: 1s;
-  transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    margin: 0;
+    padding: 0;
+    float: none;
+    max-height: 40px;
+    visibility: visible;
+    transition-property: all;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
+
 .Logo2 {
-  margin: 0;
-  padding: 0;
-  float: none;
-
-  max-height: 40px;
-  visibility: hidden;
-  transition-property: all;
-  transition-delay: 0.3s;
+    margin: 0;
+    padding: 0;
+    float: none;
+    max-height: 40px;
+    visibility: hidden;
+    transition-property: all;
+    transition-delay: 0.3s;
 }
 
-.Row{
-  height: 100%;
-  width: 100%;
-  margin: 0%;
-  padding: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.Row {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.Col{
-height: 100%;
-width: 100%;
-margin: 0%;
-padding: 0%;
-display: flex;
-justify-content: center;
-align-items: center;
-
+.Col {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ColTwo{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0%;
-  padding: 0%;
-  
-  
+.ColTwo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
 }
 
-
-.ColThree{
-  width: 100%;
-  height: 100%;
-  margin: 0%;
-  padding: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  
- 
-  text-align: center;
+.ColThree {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @media screen and (device-width: 360px) and (device-height: 640px) {
-  .Row{
-    flex-direction: column;
-  }
-
-
-
-  .Con{
-    
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-    margin: 0%;
-    padding: 10px;
-  }
-
-  .Col{
-
-    flex-direction: column;
-
-  }
-  .ColTwo{
-     padding-top: 10px;
-   
-  }
-  .ColThree{
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-
-  
- 
+    .Row {
+        flex-direction: column;
+    }
+    .Con {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0%;
+        padding: 10px;
+    }
+    .Col {
+        flex-direction: column;
+    }
+    .ColTwo {
+        padding-top: 10px;
+    }
+    .ColThree {
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
+
 @media screen and (device-width: 411px) and (device-height: 731px) {
-  .Row{
-    flex-direction: column;
-  }
-
-
-
-  .Con{
-    
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .Col{
-
-    flex-direction: column;
-
-  }
-  .ColTwo{
-     padding-top: 10px;
-    flex-direction: column;
-  }
-  .ColThree{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-
-  
- 
+    .Row {
+        flex-direction: column;
+    }
+    .Con {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .Col {
+        flex-direction: column;
+    }
+    .ColTwo {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .ColThree {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
+
 @media screen and (device-width: 411px) and (device-height: 823px) {
-  .Row{
-    flex-direction: column;
-  }
-
-
-
-  .Con{
-    
-    height: auto;
-    flex-direction: column;
-    padding-top: 20px;
-  }
-
-  .Col{
-
-    flex-direction: column;
-
-  }
-  .ColTwo{
-     padding-top: 10px;
-    flex-direction: column;
-  }
-  .ColThree{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-
-  
- 
+    .Row {
+        flex-direction: column;
+    }
+    .Con {
+        height: auto;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .Col {
+        flex-direction: column;
+    }
+    .ColTwo {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .ColThree {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
-
 
 @media screen and (device-width: 320px) and (device-height: 568px) {
-  .Row{
-    flex-direction: column;
-  }
-
-
-
-  .Con{
-    
-    height: auto;
-    flex-direction: column;
-    padding-top: 20px;
-  }
-
-  .Col{
-
-    flex-direction: column;
-
-  }
-  .ColTwo{
-     padding-top: 10px;
-    flex-direction: column;
-  }
-  .ColThree{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-
-  
- 
+    .Row {
+        flex-direction: column;
+    }
+    .Con {
+        height: auto;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .Col {
+        flex-direction: column;
+    }
+    .ColTwo {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .ColThree {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (device-width: 375px) and (device-height: 667px) {
-  .Row{
-    flex-direction: column;
-  }
-
-
-
-  .Con{
-    
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .Col{
-
-    flex-direction: column;
-
-  }
-  .ColTwo{
-     padding-top: 10px;
-    flex-direction: column;
-  }
-  .ColThree{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-
-  
- 
+    .Row {
+        flex-direction: column;
+    }
+    .Con {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .Col {
+        flex-direction: column;
+    }
+    .ColTwo {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .ColThree {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (device-width: 414px) and (device-height: 736px) {
-  .Row{
-    flex-direction: column;
-  }
-
-
-
-  .Con{
-    
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .Col{
-
-    flex-direction: column;
-
-  }
-  .ColTwo{
-     padding-top: 10px;
-    flex-direction: column;
-  }
-  .ColThree{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-
-  
- 
+    .Row {
+        flex-direction: column;
+    }
+    .Con {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .Col {
+        flex-direction: column;
+    }
+    .ColTwo {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .ColThree {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (device-width: 375px) and (device-height: 812px) {
-  .Row{
-    flex-direction: column;
-  }
-
-
-
-  .Con{
-    
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .Col{
-
-    flex-direction: column;
-
-  }
-  .ColTwo{
-     padding-top: 10px;
-    flex-direction: column;
-  }
-  .ColThree{
-    display: flex;
-    justify-content: flex-end;
-  }
-
-
-  
- 
+    .Row {
+        flex-direction: column;
+    }
+    .Con {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .Col {
+        flex-direction: column;
+    }
+    .ColTwo {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .ColThree {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
