@@ -23,7 +23,7 @@ const UnderHeader = props => {
                 <MDBIcon className={`${classes.Icon} green-text mr-2 fa-3x`} icon="check" />
                 <li dangerouslySetInnerHTML={{ __html: props.callOutOne }} />
               </li>
-              <li className="d-flex">
+              <li className="d-flex" style={{ display: 'flex' }}>
                 <MDBIcon className={`${classes.Icon} green-text mr-2 fa-3x`} icon="check" />
                 <li dangerouslySetInnerHTML={{ __html: props.callOutTwo }} />
               </li>
