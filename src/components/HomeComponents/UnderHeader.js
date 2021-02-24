@@ -19,18 +19,18 @@ const UnderHeader = props => {
         <MDBRow className={classes.Row}>
           <MDBCol md="6" className={classes.Col}>
             <ul className={`${classes.List} p-0`}>
-              <li className="d-flex">
+              <div className="d-flex">
                 <MDBIcon className={`${classes.Icon} green-text mr-2 fa-3x`} icon="check" />
                 <li dangerouslySetInnerHTML={{ __html: props.callOutOne }} />
-              </li>
-              <li className="d-flex" style={{ display: 'flex' }}>
+              </div>
+              <div className="d-flex" style={{ display: 'flex' }}>
                 <MDBIcon className={`${classes.Icon} green-text mr-2 fa-3x`} icon="check" />
                 <li dangerouslySetInnerHTML={{ __html: props.callOutTwo }} />
-              </li>
-              <li className="d-flex">
+              </div>
+              <div className="d-flex">
                 <MDBIcon className={`${classes.Icon} green-text mr-2 fa-3x`} icon="check" />
                 <li dangerouslySetInnerHTML={{ __html: props.callOutThree }} />
-              </li>
+              </div>
             </ul>
           </MDBCol>
           <MDBCol md="6" className={classes.VidCol}>
