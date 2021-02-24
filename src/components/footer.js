@@ -1,24 +1,24 @@
 import React from "react"
-import { Link} from "gatsby"
+import { Link } from "gatsby"
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact"
 import classes from "./Footer.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import {MDBIcon} from 'mdbreact'
+import { MDBIcon } from 'mdbreact'
 const Footer = () => {
-  
+
   return (
-    <MDBFooter className={classes.Footer}>
+    <MDBFooter className={`${classes.Footer} border-top border-success elegant-color-dark`}>
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6" className={classes.Col}>
-            
-            <img 
-            src='https://admin.fencingleeds.co/wp-content/uploads/2020/04/cropped-Asset-2@2x.png' 
-            className={classes.FooterLogo}
+
+            <img
+              src='https://admin.fencingleeds.co/wp-content/uploads/2020/04/cropped-Asset-2@2x.png'
+              className={classes.FooterLogo}
             />
-            <p>9 Copley Hill<br/> Batley<br/>WF170DT
+            <p>9 Copley Hill<br /> Batley<br />WF170DT
             </p>
-              
+
           </MDBCol>
           <MDBCol md="6" className={classes.Col}>
             <h5 className="title">Menu</h5>
@@ -32,7 +32,7 @@ const Footer = () => {
               <li className="list-unstyled">
                 <AniLink fade duration={1.2} to="/services/paving-patios">Patios</AniLink>
               </li>
-            
+
               <li className="list-unstyled">
                 <AniLink fade duration={1.2} to='/reviews'>Reviews</AniLink>
               </li>
@@ -43,19 +43,19 @@ const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid className={classes.Copy}> 
+      <div className="text-center py-3">
+        <MDBContainer fluid className={classes.Copy}>
           &copy; {new Date().getFullYear()} <a> Zaya Enterprises Limited 13124098 - Trading As TJM Landcapes </a>
           <p>
             Site by <a href="https://www.instagram.com/tjs.io/">Tjs.io</a>
           </p>
-         
+
         </MDBContainer>
       </div>
 
       <div className={classes.Social}>
-      <a target='_blank' href='https://www.facebook.com/tjmlandscapeswestyorkshire'><MDBIcon fab icon="facebook-square" size='2x' className={classes.IconOne} /></a>
-     <a target='_blank' href='https://www.instagram.com/tm_landscapeswy/'> <MDBIcon fab icon="instagram" size='2x' className={classes.IconTwo}/></a>
+        <a target='_blank' href='https://www.facebook.com/tjmlandscapeswestyorkshire'><MDBIcon fab icon="facebook-square" size='2x' className={classes.IconOne} /></a>
+        <a target='_blank' href='https://www.instagram.com/tm_landscapeswy/'> <MDBIcon fab icon="instagram" size='2x' className={classes.IconTwo} /></a>
       </div>
     </MDBFooter>
   )

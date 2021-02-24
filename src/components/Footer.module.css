@@ -1,45 +1,33 @@
-.Footer {
-    background-color: black !important;
-    padding-top: 10px;
-    border-top: 2px solid green;
-   
-    
-
-}
-
-
+.Footer {}
 
 .Footer span {
     font-size: 30px;
-    
 }
 
-.Col h5{
+.Col h5 {
     padding-top: 10px;
     text-transform: uppercase;
 }
-
-
 
 .Footer a:hover {
     color: green;
 }
 
-.FooterLogo{
+.FooterLogo {
     width: 200px;
     height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.U{
+.U {
     list-style: none;
     padding: 0;
     padding-left: 10px;
     margin: 0;
 }
 
-.Col{
+.Col {
     width: 100%;
     height: 100%;
     display: flex;
@@ -47,52 +35,37 @@
     flex-direction: column;
 }
 
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 640px) 
- { 
-
-   .U{
-       padding-left: 5px;
-   }
-   .Col h5{
-       padding-left: 5px;
-   }
-
-
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    .U {
+        padding-left: 5px;
+    }
+    .Col h5 {
+        padding-left: 5px;
+    }
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px) 
- { 
-
-   .U{
-       padding-left: 5px;
-   }
-   .Col h5{
-       padding-left: 5px;
-   }
-
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .U {
+        padding-left: 5px;
+    }
+    .Col h5 {
+        padding-left: 5px;
+    }
 }
 
-.Social{
+.Social {
     width: 100%;
-    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
-
-.IconOne{
+.IconOne {
     padding: 10px;
     color: #14a1f9 !important;
 }
 
-.IconTwo{
+.IconTwo {
     padding: 10px;
     color: #d63948 !important;
 }

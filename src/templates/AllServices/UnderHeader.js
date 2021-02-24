@@ -7,7 +7,7 @@ const UnderHeader = props => {
   return (
     <React.Fragment>
       <MDBContainer className={classes.Con}>
-        <span className={classes.Background}>
+        <span className={`${classes.Background} p-5 green darken-4 border border-success`}>
           <h2>{props.title}</h2>
 
           <span>{renderHTML(props.intro)}</span>

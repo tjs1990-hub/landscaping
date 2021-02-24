@@ -109,7 +109,6 @@ const Index = props => {
         }
       `}
       render={props => {
-        console.log(props.wordpressPage)
         return (
           <React.Fragment>
 
@@ -122,7 +121,7 @@ const Index = props => {
             />
             <Layout>
 
-              <div className={classes.Wrapper}>
+              <div className="elegant-color-dark overflow-hidden">
 
 
                 <Header
@@ -169,7 +168,7 @@ const Index = props => {
                 </Animation>
 
                 <Animation type="fadeInUp" reveal={true} delay="0">
-                  <div className={classes.GetQuote}>
+                  <div className={`${classes.GetQuote} green`}>
                     <GetQuote />
                   </div>
                 </Animation>

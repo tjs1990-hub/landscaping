@@ -10,7 +10,7 @@ const Animation = props => {
       reveal={props.reveal}
       duration={props.duration}
       infinite={props.infinite}
-      className={classes.Ani}
+      className="mt-5"
     >
       {props.children}
     </MDBAnimation>

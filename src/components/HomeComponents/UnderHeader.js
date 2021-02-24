@@ -5,16 +5,9 @@ import classes from "./UnderHeader.module.css"
 const UnderHeader = props => {
   return (
     <React.Fragment>
-    <MDBContainer className={classes.CovidSection}>
-
-       <h3>Covid-19 Latest</h3>
-
-       
-    
-    
-    </MDBContainer>
-      <MDBContainer className={classes.Con}>
-        <MDBRow className={classes.TopRow}>
+      <h1 className="text-center red-text font-weight-bold">Covid-19 Latest</h1>
+      <MDBContainer className="white-text">
+        <MDBRow>
           <div
             className={classes.Welcome}
             dangerouslySetInnerHTML={{ __html: props.content }}
@@ -25,20 +18,19 @@ const UnderHeader = props => {
       <MDBContainer style={{ marginTop: "100px" }}>
         <MDBRow className={classes.Row}>
           <MDBCol md="6" className={classes.Col}>
-            <ul className={classes.List}>
-              <li>
-                <MDBIcon className={classes.Icon} icon="check-square" list />{" "}
+            <ul className={`${classes.List} p-0`}>
+              <li className="d-flex">
+                <MDBIcon className={`${classes.Icon} green-text mr-2 fa-3x`} icon="check" />
+                <li dangerouslySetInnerHTML={{ __html: props.callOutOne }} />
               </li>
-              <li dangerouslySetInnerHTML={{ __html: props.callOutOne }} />
-              <li>
-                <MDBIcon className={classes.Icon} icon="check-square" list />{" "}
+              <li className="d-flex">
+                <MDBIcon className={`${classes.Icon} green-text mr-2 fa-3x`} icon="check" />
+                <li dangerouslySetInnerHTML={{ __html: props.callOutTwo }} />
               </li>
-
-              <li dangerouslySetInnerHTML={{ __html: props.callOutTwo }} />
-              <li>
-                <MDBIcon className={classes.Icon} icon="check-square" list />{" "}
+              <li className="d-flex">
+                <MDBIcon className={`${classes.Icon} green-text mr-2 fa-3x`} icon="check" />
+                <li dangerouslySetInnerHTML={{ __html: props.callOutThree }} />
               </li>
-              <li dangerouslySetInnerHTML={{ __html: props.callOutThree }} />
             </ul>
           </MDBCol>
           <MDBCol md="6" className={classes.VidCol}>

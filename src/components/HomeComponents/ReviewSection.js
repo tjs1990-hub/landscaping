@@ -8,24 +8,24 @@ const ReviewSection = props => {
   return (
     <React.Fragment>
       <MDBContainer fluid={true} className={classes.Con}>
-      <Img
-      fluid={props.reviewBackground}
-      alt={props.reviewBackground.alt_text}
-      className={classes.reviewBackground}
-    />
+        <Img
+          fluid={props.reviewBackground}
+          alt={props.reviewBackground.alt_text}
+          className={classes.reviewBackground}
+        />
 
         <MDBContainer className={classes.Overlay} fluid={true}>
           <MDBRow className={classes.Row}>
-            <MDBCol md="6" className={classes.Col}>
+            <MDBCol md="6" className="w-100 h-100 p-4">
               <Img
                 fluid={props.reviewImg}
                 alt={props.reviewImg.alt_text}
-                className={classes.Img}
+                className="white-color"
               />
-            
+
             </MDBCol>
-            <MDBCol md="6" className={classes.Col}>
-             
+            <MDBCol md="6" className="w-100 h-100 p-4">
+
               <ReviewStars />
             </MDBCol>
           </MDBRow>
