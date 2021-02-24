@@ -20,7 +20,7 @@ const ReviewSection = props => {
               <Img
                 fluid={props.reviewImg}
                 alt={props.reviewImg.alt_text}
-                className="white-color"
+                className="white rounded-lg"
               />
 
             </MDBCol>
