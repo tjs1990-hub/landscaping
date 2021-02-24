@@ -14,14 +14,14 @@ const Footer = () => {
 
             <img
               src='https://admin.fencingleeds.co/wp-content/uploads/2020/04/cropped-Asset-2@2x.png'
-              className={classes.FooterLogo}
+              className={`${classes.FooterLogo} mb-4`}
             />
             <p>9 Copley Hill<br /> Batley<br />WF170DT
             </p>
 
           </MDBCol>
           <MDBCol md="6" className={classes.Col}>
-            <h5 className="title">Menu</h5>
+            <h5 className="title mb-4 font-weight-bold">Menu</h5>
             <ul className={classes.U}>
               <li className="list-unstyled">
                 <AniLink fade duration={1.2} to="/services/turfing-grass">Turfing</AniLink>

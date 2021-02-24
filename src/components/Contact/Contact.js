@@ -33,7 +33,7 @@ export default class Contact extends Component {
 
   toggleModal = () => {
     this.setState({ isOpen: !this.state.isOpen }, () => {
-      window.scroll({top: 0, left: 0, behavior: 'smooth' })
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' })
       this.state.isOpen ? document.body.classList.add(classes.BodyClass) : document.body.classList.remove(classes.BodyClass)
     })
   }
@@ -67,7 +67,7 @@ export default class Contact extends Component {
       )
       .then(res => {
         res.data.status === "mail_sent"
-          ? this.setState({ 
+          ? this.setState({
             messageSent: res.data.message,
             name: "",
             email: "",
@@ -75,23 +75,23 @@ export default class Contact extends Component {
             postcode: '',
             message: "",
 
-           })
+          })
           : this.setState({ errorMessage: res.data.message }, () => {
-              setTimeout(() => {
-                this.setState({ errorMessage: "" })
-              }, 2000)
-            })
+            setTimeout(() => {
+              this.setState({ errorMessage: "" })
+            }, 2000)
+          })
       })
   }
 
   render() {
     return (
       <React.Fragment>
-        <MDBContainer className={classes.BtnCon}>
+        <span className={classes.BtnCon}>
           <span onClick={this.toggleModal} className={classes.Link}>
             Contact Us
           </span>
-        </MDBContainer>
+        </span>
         <MDBModal
           isOpen={this.state.isOpen}
           toggle={this.toggleModal}
@@ -103,7 +103,7 @@ export default class Contact extends Component {
           >
             Get In Touch
             <br />
-          
+
           </MDBModalHeader>
           <MDBModalBody>
             <form onSubmit={this.onSubmit} className={classes.Form}>

@@ -8,7 +8,7 @@ const Header = (props) => {
 
   return (
     <React.Fragment>
-      <MDBContainer fluid={true} className={classes.Con} id='funk'>
+      <div className={`${classes.Con} mx-0`} id='funk'>
         <Img
           fluid={props.imgUrl}
           alt={props.alt}
@@ -21,7 +21,7 @@ const Header = (props) => {
         <div className={classes.Featured}>
           <Img fluid={props.featuredNew} className={classes.Feat} />
         </div>
-      </MDBContainer>
+      </div>
     </React.Fragment>
   )
 }
