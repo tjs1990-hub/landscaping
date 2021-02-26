@@ -32,7 +32,7 @@ export default class GetQuote extends Component {
 
   toggleModal = () => {
 
-    
+
     this.setState({ isOpen: !this.state.isOpen })
   }
 
@@ -44,7 +44,7 @@ export default class GetQuote extends Component {
 
 
 
- 
+
 
   onSubmit = e => {
     e.preventDefault()
@@ -69,18 +69,19 @@ export default class GetQuote extends Component {
       )
       .then(res => {
         res.data.status === "mail_sent"
-          ? this.setState({ messageSent: res.data.message,
+          ? this.setState({
+            messageSent: res.data.message,
             name: "",
             email: "",
             contactNumber: "",
             postcode: "",
             message: "",
-           })
+          })
           : this.setState({ errorMessage: res.data.message }, () => {
-              setTimeout(() => {
-                this.setState({ errorMessage: "" })
-              }, 2000)
-            })
+            setTimeout(() => {
+              this.setState({ errorMessage: "" })
+            }, 2000)
+          })
       })
   }
 
@@ -89,7 +90,7 @@ export default class GetQuote extends Component {
       <React.Fragment>
         <MDBContainer className={this.state.isOpen ? classes.BtnconActive : classes.BtnCon}>
           <h2>{this.state.isOpen ? '' : 'Get In Touch Today For Your Free No Obligation Quote!'}</h2>
-          <MDBBtn className={this.state.isOpen ? classes.BtnActive : classes.Btn} onClick={this.toggleModal}>
+          <MDBBtn color="info" className={this.state.isOpen ? classes.BtnActive : classes.Btn} onClick={this.toggleModal}>
             Get Quote
           </MDBBtn>
         </MDBContainer>
@@ -97,7 +98,7 @@ export default class GetQuote extends Component {
           isOpen={this.state.isOpen}
           toggle={this.toggleModal}
           className={classes.Modal}
-          
+          centered
         >
           <MDBModalHeader
             className={classes.ModalHead}

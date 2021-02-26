@@ -40,8 +40,6 @@ export default class Contact extends Component {
 
   onChangeHandler = e => {
     this.setState({ [e.target.name]: e.target.value })
-
-    console.log(e.target.value)
   }
 
   onSubmit = e => {
@@ -86,9 +84,9 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className="position-fixed" style={{ bottom: 0, right: 10, zIndex: 5 }}>
         <span className={classes.BtnCon}>
-          <span onClick={this.toggleModal} className={classes.Link}>
+          <span onClick={this.toggleModal} className={`${classes.Link} my-3 bg-success p-3 rounded-pill`}>
             Contact Us
           </span>
         </span>
@@ -96,6 +94,7 @@ export default class Contact extends Component {
           isOpen={this.state.isOpen}
           toggle={this.toggleModal}
           className={classes.Modal}
+          centered
         >
           <MDBModalHeader
             className={classes.ModalHead}
@@ -103,7 +102,6 @@ export default class Contact extends Component {
           >
             Get In Touch
             <br />
-
           </MDBModalHeader>
           <MDBModalBody>
             <form onSubmit={this.onSubmit} className={classes.Form}>
@@ -189,13 +187,13 @@ export default class Contact extends Component {
               </div>
             </form>
           </MDBModalBody>
-          <MDBModalFooter>
+          {/* <MDBModalFooter>
             <MDBBtn color="black" onClick={this.toggleModal}>
               Close
             </MDBBtn>
-          </MDBModalFooter>
+          </MDBModalFooter> */}
         </MDBModal>
-      </React.Fragment>
+      </div>
     )
   }
 }

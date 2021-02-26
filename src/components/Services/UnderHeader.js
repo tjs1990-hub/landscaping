@@ -25,9 +25,9 @@ const UnderHeader = props => {
         imgThree={props.imgThree}
       />
 
-      <MDBContainer className={classes.TextTwo}>
+      <MDBContainer className={`${classes.TextTwo} green-text`}>
         <div className={classes.BorderTwo}>
-          <span>{renderHTML(props.textTwo)}</span>
+          <span className="font-italic">{renderHTML(props.textTwo)}</span>
         </div>
       </MDBContainer>
     </React.Fragment>

@@ -12,13 +12,6 @@ const TopMenu = (props) => {
     <React.Fragment>
       <MDBContainer fluid={true} className={`${classes.Con} text-white elegant-color-dark border-bottom border-success`}>
         <MDBRow className={`${classes.Row} align-items-center justify-content-between`}>
-          <VortexReverse
-            width='20'
-            active={props.active}
-            onClick={props.toggleCollapse}
-            color={props.active ? 'green' : 'rgb(244, 244, 244)'}
-            className={props.active ? classes.ButOne : classes.MainBut}
-          />
           <Link to="/">
             <img
               src={props.logo}
@@ -26,10 +19,17 @@ const TopMenu = (props) => {
               className={props.active ? classes.Logo2 : classes.Logo}
             />
           </Link>
-          <Contact />
+          <VortexReverse
+            width='20'
+            active={props.active}
+            onClick={props.toggleCollapse}
+            color={props.active ? 'green' : 'rgb(244, 244, 244)'}
+            className={props.active ? classes.ButOne : classes.MainBut}
+          />
           {/* <MDBCol md="4" className={classes.ColThree}>
           </MDBCol> */}
         </MDBRow>
+        <Contact />
       </MDBContainer>
     </React.Fragment>
   )

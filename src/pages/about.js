@@ -11,16 +11,15 @@ import SEO from "../components/seo"
 import og from '../images/og.jpg'
 
 export default ({ data }) => {
-  
+
   return (
     <React.Fragment>
       <SEO
         title={data.wordpressPage.yoast_meta.yoast_wpseo_title}
         description={data.wordpressPage.yoast_meta.yoast_wpseo_metadesc}
-        image={`https://landscapegardenerswestyorkshire.com`+og}
+        image={`https://landscapegardenerswestyorkshire.com` + og}
         rating={data.googlePlacesPlace.rating}
         total={data.googlePlacesPlace.user_ratings_total}
-        
       />
       <Layout>
         <div className={classes.Wrapper}>
@@ -28,14 +27,11 @@ export default ({ data }) => {
             img={data.wordpressPage.acf.header_img.localFile.childImageSharp.fluid}
             text={data.wordpressPage.acf.header_text}
           />
-            
+
           <Content content={data.wordpressPage.acf.content} />
           <div className={classes.Background}>
             <GetQuote />
           </div>
-
-          
-
           <AllServices />
 
           <Qualifications />

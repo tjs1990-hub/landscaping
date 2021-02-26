@@ -88,7 +88,7 @@ const Allservices = () => {
                   <div
                     className={classes.scrollingWrapperFlexbox}
                   >
-                    {props.allWordpressWpServices.edges.map(edge => (<MDBCard className={classes.Card} key={edge.node.slug}>
+                    {props.allWordpressWpServices.edges.map(edge => (<MDBCard className={`${classes.Card} mx-3`} key={edge.node.slug}>
                       <Img
                         // check edge has property
                         fluid={edge.node.acf.header_img.localFile.childImageSharp.fluid}

@@ -1,78 +1,81 @@
 .Border {
-  padding: 0;
-  height: auto;
-  border: 2px solid green;
+    padding: 0;
+    height: auto;
+    border: 2px solid green;
 }
 
 .BorderTwo {
-  padding: 0;
-  height: auto;
-  border: 2px solid white;
-  padding: 10px;
+    padding: 0;
+    height: auto;
+    border: 2px solid white;
+    padding: 10px;
 }
 
 .ConTop {
-  height: 300px;
-  position: relative;
+    height: 300px;
+    position: relative;
 }
 
 .Vid {
-  width: 100%;
-  height: 300px;
-  padding-bottom: 56.25%;
-  position: relative;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 56.25%;
+    position: relative;
 }
 
 .Vid iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .TextOne {
-  margin-top: 100px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 100px;
+    margin-top: 100px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 .TextOne h2 {
-  font-size: 80px;
+    font-size: 80px;
 }
 
 .Col {
-  text-align: center;
-  margin-top: 50px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .TextTwo {
-  color: green;
-  height: auto;
-  font-size: 50px;
-  margin-bottom: 100px;
+    height: auto;
+    font-size: 50px;
 }
+
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
+
 /* Portrait and Landscape */
+
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  .TextTwo {
-    margin-top: 200px;
-  }
+    .TextTwo {
+        margin-top: 200px;
+    }
 }
+
 
 /* ----------- Google Pixel ----------- */
 
-/* Portrait and Landscape */
-@media screen and (device-width: 411px) and (device-height: 823px) and (-webkit-device-pixel-ratio: 4) {
-  .BorderTwo {
-    margin-top: 500px;
-  }
 
-  .TextTwo {
-    position: relative;
-    top: 400px;
-  }
+/* Portrait and Landscape */
+
+@media screen and (device-width: 411px) and (device-height: 823px) and (-webkit-device-pixel-ratio: 4) {
+    .BorderTwo {
+        margin-top: 500px;
+    }
+    .TextTwo {
+        position: relative;
+        top: 400px;
+    }
 }

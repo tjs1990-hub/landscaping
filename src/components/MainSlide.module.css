@@ -1,11 +1,11 @@
 .CopyRight {
-    width          : 100%;
-    height         : auto;
-    display        : flex;
+    width: 100%;
+    height: auto;
+    display: flex;
     justify-content: center;
-    align-items    : center;
-    flex-direction : column;
-    font-size      : 17px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px;
 }
 
 .CopyRight a {
@@ -21,40 +21,40 @@
 }
 
 .LogoTop {
-    width          : 100%;
-    display        : flex;
-    align-items    : center;
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .Logo {
-    margin                    : 0;
-    padding                   : 0;
-    float                     : none;
-    max-width                 : 200px;
-    max-height                : 100px;
-    visibility                : visible;
-    transition-property       : all;
-    transition-delay          : 1s;
+    margin: 0;
+    padding: 0;
+    float: none;
+    max-width: 200px;
+    max-height: 100px;
+    visibility: visible;
+    transition-property: all;
+    transition-delay: 1s;
     transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
 .Logo2 {
-    margin                    : 0;
-    padding                   : 0;
-    float                     : none;
-    max-width                 : 200px;
-    max-height                : 100px;
-    visibility                : hidden;
-    transition-property       : all;
-    transition-delay          : 0.3s;
+    margin: 0;
+    padding: 0;
+    float: none;
+    max-width: 200px;
+    max-height: 100px;
+    visibility: hidden;
+    transition-property: all;
+    transition-delay: 0.3s;
     transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
 .ButTwo {
-    visibility                : hidden !important;
-    transition-property       : all;
-    transition-duration       : 0.2s;
+    visibility: hidden !important;
+    transition-property: all;
+    transition-duration: 0.2s;
     transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 
@@ -67,64 +67,64 @@
 }
 
 .Wrapper {
-    height             : 100vh;
-    z-index            : 200000;
-    position           : fixed;
-    background-color   : black;
-    width              : 25%;
-    overflow           : hidden;
-    transform          : translateX(0px);
+    height: 100vh;
+    z-index: 200000;
+    position: fixed;
+    background-color: black;
+    width: 25%;
+    overflow: hidden;
+    transform: translateX(0px);
     transition-property: all;
     transition-duration: .5s;
 }
 
 .WrapperTwo {
-    height                    : 100vh;
-    z-index                   : 200000;
-    position                  : fixed;
-    background-color          : green;
-    width                     : 30%;
-    overflow                  : hidden;
-    transform                 : translateX(-600px);
-    transition-property       : all;
-    transition-duration       : 2s;
+    height: 100vh;
+    z-index: 200000;
+    position: fixed;
+    background-color: green;
+    width: 30%;
+    overflow: hidden;
+    transform: translateX(-600px);
+    transition-property: all;
+    transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .SideDrawer {
-    height         : 60%;
-    width          : 100%;
-    display        : flex;
+    height: 60%;
+    width: 100%;
+    display: flex;
     justify-content: center;
-    align-items    : center;
-    flex-direction : column;
-    padding-right  : 20px;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 20px;
 }
 
 .SideDrawer ul {
-    width          : 100%;
-    height         : 100%;
-    display        : flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: flex-start;
-    align-items    : center;
-    flex-direction : column;
-    font-size      : 40px;
-    margin-top     : 70px;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    margin-top: 70px;
 }
 
 .SideDrawer a {
-    color      : white;
+    color: white;
     font-weight: 400;
 }
 
 .SideDrawer a:hover {
-    color      : green;
+    color: green;
     font-weight: 500;
 }
 
 .Toggle {
-    width          : 100%;
-    display        : flex;
+    width: 100%;
+    display: flex;
     justify-content: flex-end;
 }
 
@@ -148,28 +148,25 @@
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
     .LogoTop {
-        height       : auto;
-        padding      : auto;
-        margin-top   : 20px;
+        height: auto;
+        padding: auto;
+        margin-top: 20px;
         padding-right: 20px;
     }
-
     .Toggle {
-        height     : 30px;
+        height: 30px;
         padding-top: 0px !important;
-        margin-top : 0px !important;
+        margin-top: 0px !important;
     }
-
     .SideDrawer ul {
-        height         : 100%;
+        height: 100%;
         justify-content: flex-start;
-        padding-top    : 0;
-        font-size      : 60px;
-        margin-top     : 30px;
+        padding-top: 0;
+        font-size: 60px;
+        margin-top: 30px;
     }
-
     .Wrapper {
-        width    : 80%;
+        width: 80%;
         font-size: 50px;
     }
 }
@@ -182,27 +179,23 @@
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
     .LogoTop {
-        height         : auto;
-        display        : flex;
+        height: auto;
+        display: flex;
         justify-content: flex-start;
     }
-
     .Toggle {
-        height     : 30px;
+        height: 30px;
         padding-top: 20px;
     }
-
     .SideDrawer ul {
-        height         : 100%;
+        height: 100%;
         justify-content: flex-start;
-        padding-top    : 0px;
-        font-size      : 60px;
+        padding-top: 0px;
+        font-size: 60px;
     }
-
     .SideDrawer a {
         font-size: 50px;
     }
-
     .Wrapper {
         width: 80%;
     }
@@ -216,27 +209,23 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
     .LogoTop {
-        height         : auto;
-        display        : flex;
+        height: auto;
+        display: flex;
         justify-content: flex-start;
     }
-
     .Toggle {
-        height    : 30px;
+        height: 30px;
         margin-top: 20px;
     }
-
     .SideDrawer ul {
-        height         : 100%;
+        height: 100%;
         justify-content: flex-start;
-        padding-top    : 10px;
-        font-size      : 30px;
+        padding-top: 10px;
+        font-size: 30px;
     }
-
     .SideDrawer a {
         font-size: 25px;
     }
-
     .Wrapper {
         width: 80%;
     }
@@ -250,14 +239,12 @@
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
     .Toggle {
-        height    : 30px;
+        height: 30px;
         margin-top: 0;
     }
-
     .SideDrawer a {
         font-size: 40px;
     }
-
     .Wrapper {
         width: 80%;
     }
@@ -270,15 +257,12 @@
     .Toggle {
         height: 30px;
     }
-
     .SideDrawer a {
         font-size: 40px;
     }
-
     .SideDrawer ul {
         margin-top: 40px;
     }
-
     .Wrapper {
         width: 80%;
     }
@@ -294,25 +278,21 @@
     .LogoTop {
         padding-left: 10px;
     }
-
     .Toggle {
-        height    : 30px;
+        height: 30px;
         margin-top: 0;
     }
-
     .SideDrawer a {
         font-size: 30px;
     }
-
     .Wrapper {
         width: 80%;
     }
-
     .SideDrawer ul {
-        height         : 100%;
+        height: 100%;
         justify-content: flex-start;
-        padding-top    : 10px;
-        font-size      : 20px;
+        padding-top: 10px;
+        font-size: 20px;
     }
 }
 
@@ -326,25 +306,21 @@
     .LogoTop {
         padding-left: 10px;
     }
-
     .Toggle {
-        height    : 30px;
+        height: 30px;
         margin-top: 0;
     }
-
     .SideDrawer a {
         font-size: 35px;
     }
-
     .Wrapper {
         width: 80%;
     }
-
     .SideDrawer ul {
-        height         : 100%;
+        height: 100%;
         justify-content: flex-start;
-        padding-top    : 30px;
-        font-size      : 20px;
+        padding-top: 30px;
+        font-size: 20px;
     }
 }
 
@@ -358,25 +334,21 @@
     .LogoTop {
         padding-left: 10px;
     }
-
     .Toggle {
-        height    : 30px;
+        height: 30px;
         margin-top: 0;
     }
-
     .SideDrawer a {
         font-size: 28px;
     }
-
     .Wrapper {
         width: 80%;
     }
-
     .SideDrawer ul {
-        height         : 100%;
+        height: 100%;
         justify-content: flex-start;
-        padding-top    : 30px;
-        font-size      : 20px;
+        padding-top: 30px;
+        font-size: 20px;
     }
 }
 
@@ -387,24 +359,20 @@
     .LogoTop {
         padding-left: 10px;
     }
-
     .Toggle {
-        height    : 30px;
+        height: 30px;
         margin-top: 0;
     }
-
     .SideDrawer a {
         font-size: 35px;
     }
-
     .Wrapper {
         width: 80%;
     }
-
     .SideDrawer ul {
-        height         : 100%;
+        height: 100%;
         justify-content: flex-start;
-        padding-top    : 30px;
-        font-size      : 20px;
+        padding-top: 30px;
+        font-size: 20px;
     }
 }

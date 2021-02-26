@@ -12,7 +12,7 @@ const Images = props => {
             <Img
               fluid={props.imgOne}
               alt={props.imgOne.alt_text}
-              className={classes.Images}
+              className={`${classes.Images} rounded-lg`}
             />
           </MDBCol>
 
@@ -20,7 +20,7 @@ const Images = props => {
             <Img
               fluid={props.imgTwo}
               alt={props.imgTwo.alt_text}
-              className={classes.Images}
+              className={`${classes.Images} rounded-lg`}
             />
           </MDBCol>
 
@@ -28,7 +28,7 @@ const Images = props => {
             <Img
               fluid={props.imgThree}
               alt={props.imgThree.alt_text}
-              className={classes.Images}
+              className={`${classes.Images} rounded-lg`}
             />
           </MDBCol>
         </MDBRow>
