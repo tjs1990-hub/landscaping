@@ -93,7 +93,7 @@ export default class Contact extends Component {
         <MDBModal
           isOpen={this.state.isOpen}
           toggle={this.toggleModal}
-          className={classes.Modal}
+          className={`${classes.Modal} m-4`}
           centered
         >
           <MDBModalHeader
@@ -101,7 +101,6 @@ export default class Contact extends Component {
             toggle={this.toggleModal}
           >
             Get In Touch
-            <br />
           </MDBModalHeader>
           <MDBModalBody>
             <form onSubmit={this.onSubmit} className={classes.Form}>
