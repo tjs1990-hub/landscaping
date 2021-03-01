@@ -32,7 +32,7 @@ export default class GetQuote extends Component {
 
   toggleModal = () => {
     this.setState({ isOpen: !this.state.isOpen }, () => {
-      window.scroll({top: 0, left: 0, behavior: 'smooth' })
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' })
       this.state.isOpen ? document.body.classList.add(classes.BodyClass) : document.body.classList.remove(classes.BodyClass)
     })
   }
@@ -69,18 +69,18 @@ export default class GetQuote extends Component {
       .then(res => {
         res.data.status === "mail_sent"
           ? this.setState({
-              messageSent: res.data.message,
-              name: "",
-              email: "",
-              contactNumber: "",
-              postcode: "",
-              message: "",
-            })
+            messageSent: res.data.message,
+            name: "",
+            email: "",
+            contactNumber: "",
+            postcode: "",
+            message: "",
+          })
           : this.setState({ errorMessage: res.data.message }, () => {
-              setTimeout(() => {
-                this.setState({ errorMessage: "" })
-              }, 2000)
-            })
+            setTimeout(() => {
+              this.setState({ errorMessage: "" })
+            }, 2000)
+          })
       })
   }
 
@@ -96,7 +96,7 @@ export default class GetQuote extends Component {
           <MDBModal
             isOpen={this.state.isOpen}
             toggle={this.toggleModal}
-            className={classes.Modal}
+            className={`${classes.Modal} mx-5`}
             centered
           >
             <MDBModalHeader

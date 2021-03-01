@@ -97,7 +97,7 @@ export default class GetQuote extends Component {
         <MDBModal
           isOpen={this.state.isOpen}
           toggle={this.toggleModal}
-          className={classes.Modal}
+          className={`${classes.Modal} mx-5`}
           centered
         >
           <MDBModalHeader
