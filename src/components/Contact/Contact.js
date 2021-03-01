@@ -93,7 +93,7 @@ export default class Contact extends Component {
         <MDBModal
           isOpen={this.state.isOpen}
           toggle={this.toggleModal}
-          className={`${classes.Modal} m-4`}
+          className={`${classes.Modal} m-5`}
           centered
         >
           <MDBModalHeader
