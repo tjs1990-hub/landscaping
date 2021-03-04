@@ -97,11 +97,11 @@ export default class GetQuote extends Component {
         <MDBModal
           isOpen={this.state.isOpen}
           toggle={this.toggleModal}
-          className={`${classes.Modal} mx-5`}
+          className={`${classes.Modal} mx-5 mx-sm-auto`}
           centered
         >
           <MDBModalHeader
-            className={classes.ModalHead}
+            className={`${classes.ModalHead} `}
             toggle={this.toggleModal}
           >
             Get Your Quote
@@ -185,11 +185,6 @@ export default class GetQuote extends Component {
               </div>
             </form>
           </MDBModalBody>
-          <MDBModalFooter>
-            <MDBBtn color="black" onClick={this.toggleModal}>
-              Close
-            </MDBBtn>
-          </MDBModalFooter>
         </MDBModal>
       </React.Fragment>
     )
